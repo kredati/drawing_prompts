@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+<title>Jason's Drawing Prompts</title>
+
+<script>
+
+const words = [
+  "foo",
+  "bar",
+  "baz"
+]
+
+const get_random_word = () => words[Math.floor(Math.random() * words.length)]
+
+const set_word = word => {
+  const el = Document.getElementById("the_word")
+  el.innerHTML = word
+}
+
+</script>
+
+</head>
+
+<body onload="set_word(get_random_word)">
+
+<div id="the_word" style="font-size: 24px">nothing yet</div>
+
+</body>
+
+</html>
